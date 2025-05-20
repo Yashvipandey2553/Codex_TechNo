@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Temperature Converter</h1>
+        
+        <div class="input-group">
+            <label for="temperature">Enter Temperature:</label>
+            <input type="number" id="temperature" placeholder="Enter temperature value">
+        </div>
+        
+        <div class="radio-group">
+            <label>Select Input Unit:</label>
+            <div class="radio-option">
+                <input type="radio" id="celsius" name="unit" value="celsius" checked>
+                <label for="celsius">Celsius (°C)</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="fahrenheit" name="unit" value="fahrenheit">
+                <label for="fahrenheit">Fahrenheit (°F)</label>
+            </div>
+            <div class="radio-option">
+                <input type="radio" id="kelvin" name="unit" value="kelvin">
+                <label for="kelvin">Kelvin (K)</label>
+            </div>
+        </div>
+        
+        <button id="convert-btn">Convert</button>
+        
+        <div class="result-container">
+            <h2>Conversion Results:</h2>
+            <div class="result" id="result">
+                <div class="result-item celsius">
+                    <span class="result-label">Celsius:</span>
+                    <span class="result-value" id="celsius-value">-</span>
+                    <span class="result-unit">°C</span>
+                </div>
+                <div class="result-item fahrenheit">
+                    <span class="result-label">Fahrenheit:</span>
+                    <span class="result-value" id="fahrenheit-value">-</span>
+                    <span class="result-unit">°F</span>
+                </div>
+                <div class="result-item kelvin">
+                    <span class="result-label">Kelvin:</span>
+                    <span class="result-value" id="kelvin-value">-</span>
+                    <span class="result-unit">K</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
